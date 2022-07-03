@@ -31,7 +31,7 @@ ALLOWED_HOSTS = ['127.0.0.1:8000','mltoolpr.herokuapp.com']
 # Application definition
 
 INSTALLED_APPS = [
-    'tool','ml',
+    'tool','ml','home',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
