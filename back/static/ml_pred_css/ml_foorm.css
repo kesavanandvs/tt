@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.w{
+    padding:3rem;
+    width: 600px;
+    background: black;
+    color: white;
+    text-align: center;
+    margin-left:27%;
+    border-radius: 40px;
+    margin-top: 1%;
+}
+.q{
+    position: absolute;
+    top: 95%;
+    left: 47%   
+}
+.a{
+    padding:1rem;
+    width: 600px;
+    background: black;
+    text-align: center;
+    color: white;
+    margin-left:-17rem;
+    margin-top: -2rem;
+    border-radius: 40px;
+    font-weight: bold;
+    font-size: large;
+}
+select{
+    width: 190px;
+    display: inline-block;
+   padding: 8px;
+   border-radius: 40px;
+}

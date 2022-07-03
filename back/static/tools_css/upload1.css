@@ -1,0 +1,31 @@
+.w{
+    padding:2rem;
+    width: 460px;
+    background: rgb(5, 5, 5);
+    color: white;
+    text-align: center;
+    margin-left:29%;
+    border-radius: 40px;
+    margin-top: 12%;
+}
+.e{
+    padding: 4rem;
+    width: 400px;
+    background: black;
+    color: white;
+    text-align: right;
+    margin-left: 29%;
+    border-radius: 40px;
+    margin-top: 2%;
+}
+.s{
+    padding: 1rem;
+    width: 520px;
+    background: black;
+    text-align: center;
+    color: white;
+    margin-left: 29%;
+    margin-top: 2rem;
+    border-radius: 40px;
+    position: absolute;
+}

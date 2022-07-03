@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.max-width{
+    max-width: 1300px;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 5px;
+    border-radius: 40px;
+    background: #ebe4e4;
+    font-family: 'ubuntu',sans-serif;
+}
+
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+}
+.navbar .logo a{
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    
+    color: rgb(0, 0, 0);
+    font-size: 19px;
+    font-weight: 500;
+    margin-left: 60px;
+    
+}
+.navbar .menu li a:hover{
+    color: rgb(13, 9, 241);
+}
+#med{
+    border-radius: 50px;
+    margin-left: 10px;
+}
+footer{
+    color: wheat;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    padding: 15px 0;
+    
+    background: black;
+    font-family: 'ubuntu',sans-serif;
+}
+.bn li{
+    font-size: 21px;
+    font-weight: 500;
+    margin-left: 20px;
+    list-style: none;
+    display: inline-block;
+}
+.nm{
+    text-align: right;
+    margin-right: 240px;
+    margin-bottom: 0px;
+
+} 
+
+#cm{
+    color: azure;
+    list-style: none;
+}
+
+.op{
+    text-align: right;
+    margin-right: 94px;
+}
+
+.user-log{
+  margin-left: 40px;
+}
+.k{
+    padding-top: 100px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 40px;
+    font-size: larger;
+    font-weight: bold;
+}
+.l{
+    padding-top: 4px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 190px;
+    font-size: larger;
+}

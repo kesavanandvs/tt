@@ -1,0 +1,45 @@
+.e {
+  padding: 2rem;
+  width: 460px;
+  background: rgb(5, 5, 5);
+  color: white;
+  text-align: center;
+  margin-left: 29%;
+  border-radius: 40px;
+  margin-top: 3%;
+}
+.g {
+  padding: 50px;
+  width: 1200px;
+  background: rgb(5, 5, 5);
+  color: white;
+  text-align: center;
+  margin-left: 2%;
+  border-radius: 40px;
+  margin-top: 3%;
+}
+.d {
+  text-align: center;
+}
+.v {
+  padding: 2rem;
+  width: 460px;
+  background: rgb(5, 5, 5);
+  color: white;
+  text-align: center;
+  margin-left: 29%;
+  border-radius: 40px;
+  margin-top: 3%;
+}
+.m {
+  padding: 20px;
+  width: 510px;
+  background: black;
+  color: white;
+  text-align: center;
+  margin-left: -20px;
+  border-radius: 40px;
+  margin-top: 3%;
+  font-size: large;
+  font-weight: bold;
+}

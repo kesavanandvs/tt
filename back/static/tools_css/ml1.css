@@ -1,0 +1,32 @@
+.e {
+  padding: 20px;
+  width: 460px;
+  background: black;
+  color: white;
+  text-align: center;
+  margin-left: 30%;
+  border-radius: 40px;
+  margin-top: 4%;
+}
+.m {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  margin-top: 250px;
+}
+.q {
+  position: absolute;
+  top: 75%;
+  left: 47%;
+}
+.a {
+  padding: 15px;
+  width: 490px;
+  background: black;
+  text-align: center;
+  color: white;
+  margin-left: -14rem;
+  margin-top: -2rem;
+  border-radius: 40px;
+  font-weight: bold;
+  font-size: large;
+}

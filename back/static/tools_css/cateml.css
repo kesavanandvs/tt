@@ -1,0 +1,21 @@
+.a {
+  text-align: center;
+  margin-top: 15%;
+  font-family: "Courier New", Courier, monospace;
+}
+.s {
+  margin-left: 40%;
+  margin-top: 3%;
+}
+.m {
+  padding: 20px;
+  width: 510px;
+  background: black;
+  color: white;
+  text-align: center;
+  margin-left: 32%;
+  border-radius: 40px;
+  margin-top: 4%;
+  font-size: large;
+  font-weight: bold;
+}

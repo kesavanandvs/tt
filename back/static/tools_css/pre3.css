@@ -1,0 +1,52 @@
+.e {
+  padding: 20px;
+  width: 460px;
+  background: rgb(5, 5, 5);
+  color: white;
+  text-align: center;
+  margin-left: 30%;
+  border-radius: 40px;
+  margin-top: 5%;
+}
+.b {
+  padding: 15px;
+  width: 460px;
+  background: rgb(5, 5, 5);
+  color: white;
+  text-align: center;
+  margin-left: 30%;
+  border-radius: 40px;
+  margin-top: 9%;
+}
+.w {
+  position: absolute;
+  top: 75%;
+  left: 47%;
+}
+.s {
+  padding: 15px;
+  width: 490px;
+  background: black;
+  text-align: center;
+  color: white;
+  margin-left: -14rem;
+  margin-top: 1rem;
+  border-radius: 40px;
+  font-weight: bold;
+  font-size: large;
+}
+.r {
+  padding: 15px 200px;
+  background: black;
+  text-align: center;
+  color: white;
+  margin-left: 30%;
+  border-radius: 40px;
+  font-size: large;
+  font-weight: bold;
+}
+.n {
+  margin-top: 10%;
+  font-size: large;
+  font-weight: bold;
+}

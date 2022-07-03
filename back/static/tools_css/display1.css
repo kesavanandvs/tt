@@ -1,0 +1,42 @@
+.a{
+     height: 200px;
+width: 95%;
+border: 1px solid grey;
+overflow: auto;
+white-space: nowrap;
+margin-left: 4%;
+}
+.q{
+    text-align: center;
+}
+.w{
+    padding:2rem;
+    width: 460px;
+    background: rgb(5, 5, 5);
+    color: white;
+    text-align: center;
+    margin-left:29%;
+    border-radius: 40px;
+    margin-top: 3%;
+}
+.d{
+    margin-left: 4%;
+}
+.r{
+    background-color: black;
+    color: white;
+    padding: 19px 230px;
+    text-align: center;
+    font-size: 20px;
+    margin-left: 30%;
+    border-radius: 40px;
+}
+.y{
+    margin-top: 3%;
+}
+.x{
+    background-color: black;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
