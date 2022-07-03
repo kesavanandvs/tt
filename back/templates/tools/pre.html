@@ -1,0 +1,54 @@
+{%load static%}
+<html>
+    <head>
+        <title>
+            preprocessing
+        </title>    
+        <link rel = 'stylesheet' href='{% static "tools_css/pre1.css" %}' type="text/css">
+    <head>
+
+    <body>
+      <h1 class="d" style='color:rgb(8, 8, 8)'> NO OF FEATURES IN EACH TYPE</h1>
+      <div class="e">
+        <h1>no.of.categorical features = {{noc}}</h1>
+        <h1>no.of.contionuos features = {{noco}}</h1>
+        <h1>no.of.constant features = {{nocon}}</h1></div>
+
+        <h1 class="d" style='color:rgb(8, 8, 8)'>NAME OF FEATURES IN EACH TYPE </h1>
+
+       <div class="g"> <h1>categorical features = {{nacat}}</h1>
+        <h1>contionuos features = {{nacon}}</h1>
+        <h1>no.of.constant features = {{nacons}}</h1></div>
+
+
+        <h1 class="d" style='color:rgb(8, 8, 8)'>NO OF MISSING VALUES IN EACH FEATURES </h1>
+         <div class="v">{% for keya in null_value %}
+             {% for key, value in keya.items %}
+
+              <h1>{{ key }} = {{ value }}</h1> 
+
+          {% endfor %}
+
+      {% endfor %}</div>
+
+
+      <div class="d"><h1>Drop some columns if want</h1>
+
+    <form method="POST" >
+        {% csrf_token %}
+      {% for iii in nacon %}
+
+        <label>{{iii}}</label>
+        <input type="checkbox"
+                 
+                name={{iii}} value={{iii}}>
+                
+      {% endfor %}<div class="c">
+          <button class="m" type="submit">Submit</button></div>
+    </form>
+
+
+    <div class="c"><a href="/tools/datacl2/"><button class="m">Next</button></a></div></div>
+
+    </body>
+    </html>

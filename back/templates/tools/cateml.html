@@ -1,0 +1,30 @@
+{%load static%}
+<html>
+  <head>
+    <title>algorithms</title>
+    <link rel = 'stylesheet' href='{% static "tools_css/cateml.css" %}' type="text/css">
+  </head>
+  <body>
+    <h1 class="a">{{ algo_grt }} have high accuracy score of {{ mx }}</h1>
+
+    <div>
+        
+      <table class="s" border="1px"> 
+          <tr> 
+              {% for data in ml_acr_df %} 
+                  <th>{{ data }}</th> 
+              {% endfor %} 
+       
+              {% for _, record in ml_acr_df.iterrows %} 
+                  <tr> 
+                      {% for value in record %} 
+                          <td>{{ value }}</td> 
+                      {% endfor %} 
+                  </tr> 
+              {% endfor %} 
+          </tr>  
+      </table> </div>
+<div class="f">
+        <a class="d" href="/tools/fileupload/"><button class="m">Lets predict again </button></a></div>
+  </body>
+</html>

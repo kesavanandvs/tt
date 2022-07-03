@@ -1,0 +1,17 @@
+{%load static%}
+<html>
+  <head>
+    <title>file upload</title>
+    <link rel = 'stylesheet' href='{% static "tools_css/upload1.css" %}' type="text/css">
+  </head>
+<body>
+    <h1 class="w">upload your file here</h1>
+    <div class="e">
+      <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <h2><input type="file" , name="document" /></h2></div>
+        <div class="s">
+          <input class="a" type="Submit" /></div>
+      </form>
+  </body>
+</html>

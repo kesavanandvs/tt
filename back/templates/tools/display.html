@@ -1,0 +1,77 @@
+{%load static%}
+<html>
+  <head>
+    <title>data</title>
+    <link rel = 'stylesheet' href='{% static "tools_css/display1.css" %}' type="text/css">
+  </head>
+
+  <body>
+
+    
+    <h1 class="q" style='color:black'> Data </h1>
+
+    <div class="a">
+        
+    <table border="1px"> 
+        <tr> 
+            {% for data in DataFrame %} 
+                <th>{{ data }}</th> 
+            {% endfor %} 
+     
+            {% for _, record in DataFrame.iterrows %} 
+                <tr> 
+                    {% for value in record %} 
+                        <td>{{ value }}</td> 
+                    {% endfor %} 
+                </tr> 
+            {% endfor %} 
+        </tr>  
+    </table> </div>
+    <div>
+
+     
+     <h1 class="q" style='color:black'> no.of rows and columns </h1>
+
+     <div class="w"><h1>no.of.columns = {{data_column}}</h1>
+      <h1>no.of.rows = {{data_row}}</h1></div>
+
+      
+      <h1 class="q" style='color:black'> column names </h1>
+
+     <div class="w">{% for col_nam in col_name%}
+
+          <h1>{{col_nam}}</h1>
+
+      {% endfor %}</div>
+
+      {% comment %} <h1 class="q" style='color:black'>Missing values</h1>
+      <div class="w">{% keya in null_value %}
+          {% for key, value in keya.items %}
+
+              <h1>{{ key }} = {{ value }}</h1> 
+
+          {% endfor %}
+
+      {% endfor %} {% endcomment %}
+    </div>
+
+    <h1 class="q" style='color:black'>summary</h1>
+    <div class="d"><table border="1px" align="center"> 
+        <tr> 
+            {% for sumar in descr %} 
+                <th>{{ sumar }}</th> 
+            {% endfor %} 
+     
+            {% for _, record in descr.iterrows %} 
+                <tr> 
+                    {% for value in record %} 
+                        <td>{{ value }}</td> 
+                    {% endfor %} 
+                </tr> 
+            {% endfor %} 
+        </tr>  
+    </table> </div>
+    <div class="y">
+              <a class="r" href="/tools/datacl/"><button class="x">Next</button></a></div>
+  </body>
+</html>

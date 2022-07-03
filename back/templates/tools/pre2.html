@@ -1,0 +1,23 @@
+<html>
+  {%load static%}  
+<head>
+    <title>preprocessing</title>
+    <link rel = 'stylesheet' href='{% static "tools_css/pre2.css" %}' type="text/css">
+  </head>
+  <body> 
+    <h1 class="w">FILL CONTINUES FEATURE</h1>
+    <h3><div class="v"><form method="POST">
+      {% csrf_token %} {% for iii in conmiss %}
+
+      <label>{{iii}}</label>
+      <select name="{{iii}}">
+        <option value="1">Fill with mean</option>
+        <option value="0">Remove Null value</option>
+      </select>
+      <br /><br /><br />
+      {% endfor %}</div></h3><div class="q">
+      <button class="a" type="submit">Submit</button></div>
+    </form><div class="n">
+                  <a class="r" href="/tools/datacl3/"><button class="x">Next</button></a></div>
+  </body>
+</html>

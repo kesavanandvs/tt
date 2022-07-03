@@ -1,0 +1,16 @@
+{%load static%}
+<html>
+  <head>
+  <title>Result</title>
+  <link rel="stylesheet" href='{% static "ml_pred_css/output.css" %}' type="text/css">
+  </head>
+  <body>
+    <h1 class="w">{{ output }}</h1>
+
+    <input class="s"
+      type="button"
+      value="Lets predict again !"
+      onclick="history.go(-2)"
+    />
+  </body>
+</html>

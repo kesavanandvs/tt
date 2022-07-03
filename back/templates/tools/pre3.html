@@ -1,0 +1,24 @@
+{%load static%}
+<html>
+  <head>
+    <title>preprocessing</title>
+    <link rel = 'stylesheet' href='{% static "tools_css/pre3.css" %}' type="text/css">
+  </head>
+  <body>
+    <h1 class="e">FILL CATEGORICAL FEATURE</h1>
+    <h3><div class="b"><form method="POST">
+      {% csrf_token %} {% for iii in catmiss %}
+
+      <label>{{iii}}</label>
+      <select name="{{iii}}">
+        <option value="1">Fill with mode</option>
+        <option value="0">Remove Null value</option>
+      </select>
+      <br /><br /><br />
+
+      {% endfor %}</div></h3><div class="w">
+      <button class="s" type="submit">Submit</button></div>
+    </form><div class="n">
+       <a class="y"  href="/tools/ml1/"><button class="r">Lets Train</button></a></div>
+  </body>
+</html>

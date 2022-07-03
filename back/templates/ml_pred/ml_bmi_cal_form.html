@@ -1,0 +1,29 @@
+{%load static%}
+<html>
+  <head>
+    <title>prediction</title>
+    <link
+      rel="stylesheet"
+      href='{% static "ml_pred_css/ml_bmi_cal_form.css" %}'
+      type="text/css"
+    />
+  </head>
+  <body>
+    <form method="POST" class="w">
+      {% csrf_token %}
+      <h2>
+        <label> Age </label> <input type="number" name="age" /><br /><br />
+        <label>Height</label>
+        <input type="number" name="Height" /><br /><br />
+        <label>weight</label>
+        <input type="number" name="weight" /><br /><br />
+        <label>Glucose Level</label>
+        <input type="number" name="Glucose" /><br />
+      </h2>
+
+      <div class="q">
+        <input class="a" type="Submit" />
+      </div>
+    </form>
+  </body>
+</html>

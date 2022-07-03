@@ -1,0 +1,24 @@
+{%load static%}
+<html>
+  <head>
+    <title>Training</title>
+    <link rel = 'stylesheet' href='{% static "tools_css/ml1.css" %}' type="text/css">
+  </head>
+  <body>
+  <h1 class="m" style='color:rgb(8, 8, 8)'>SELECT THE FEATURE TO BE PREDICTED </h1>
+   <div class="e"><h3> <form method="POST">
+      {% csrf_token %}
+ 
+      <label>{{iii}}</label>
+
+      <select class="n" name="ok">
+        {% for iii in inddep %}
+        <option value="{{ iii }}">{{ iii }}</option>
+        {% endfor %}
+      </select></h3></div>
+      <br /><br />
+  <div class="q">
+      <button class="a" type="submit">Submit</button></div>
+    </form>
+  </body>
+</html>

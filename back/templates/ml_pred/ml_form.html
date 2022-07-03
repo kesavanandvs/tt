@@ -1,0 +1,74 @@
+{%load static%}
+<html>
+  <head>
+  <title>form</title>
+  <link rel = 'stylesheet' href='{% static "ml_pred_css/ml_foorm.css" %}' type="text/css">
+</head>
+  <body>
+    <form method="POST" class="w">
+      {% csrf_token %}
+
+      <h2><label>Gender</label>
+
+      <select name="gender">
+        <option  value="1">Male</option>
+        <option value="0">Female</option>
+      </select>
+      <br /><br />
+
+      <label>Marital Status</label>
+
+      <select name="ever_married">
+        <option  value="1">Yes</option>
+        <option value="0">No</option>
+      </select>
+      <br /><br />
+
+      <label>Work type</label>
+
+      <select name="work_type">
+        <option value="1">Private</option>
+        <option value="2">Self-employed</option>
+        <option value="3">Govt_job</option>
+        <option value="4">Never_worked</option>
+        <option value="0">you are a child</option>
+      </select>
+      <br /><br />
+
+      <label>Residence</label>
+      <select name="Residence_type">
+        <option value="1">Rural</option>
+        <option value="0">Urban</option>
+      </select>
+      <br /><br />
+
+      <label>Smoking</label>
+      <select name="smoke_status">
+        <option value="2">smoke</option>
+        <option value="1">formerly smoked</option>
+        <option value="0">never smoked</option>
+      </select>
+      <br /><br />
+
+      <label>Hypertension</label>
+      <select name="hypertension">
+        <option value="1">Yes</option>
+        <option  value="0">No</option>
+      </select>
+      <br /><br />
+
+      <label>Heart disease</label>
+      <select name="heart_disease">
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+      </select>
+      <br /><br /></h2>
+
+      
+      <div class="q">
+        <input class="a" type="Submit" />
+    </div>
+    </form>
+    </form>
+  </body>
+</html>
